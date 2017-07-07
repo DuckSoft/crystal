@@ -1,1 +1,32 @@
 ﻿\subsection{力学平衡}
+若两相都为流体时，我们将它们放置在一个恒温恒容箱内。根据自由能判据，得出平衡状态时应有
+$$dF=dF_A+dF_B=0.$$
+设两相之间无物质交换，但可改变体积，则
+\begin{equation}
+\begin{aligned}
+dF_A&=-S_AdT_A-P_AdV_A, \\
+dF_B&=-S_BdT_B-P_BdV_B.
+\end{aligned}
+\end{equation}
+由于恒温，故$dT_A=dT_B=0$；由于总体积不变（恒容），故$dV=dV_A+dV_B=0$，得$dV_A=-dV_B$，于是$dF=dF_A+dF_B=\left(P_A-P_B\right)dV_A=0$。但$dV_A\neq 0$，故
+\begin{equation}
+P_A=P_B.
+\end{equation}
+这就是说，当两相在恒温，且总体积不变（恒容）的情况下处于平衡状态时，两相的压强应相等，这里假设两相间的接触面是平面，如果接触面是弯曲界面（如图1.2所示），且$A$相是球体时，则应加入表面能项，即$dF_A$中除了$P_AdV_A$外，还有$\sigma d\alpha_A$项，$\sigma$表示比表面能，$\alpha_A$表示$A$相的表面积。
+
+(图1.2）
+
+\noindent 于是
+\begin{align*}
+dF_A&=-S_AdT_A-P_AdV_A+\sigma d\alpha_A,\\
+dF_B&=-S_BdT_B-P_BdV_B,
+\end{align*}
+将$dV_B=-dV_A$代入，则两式相减后，得
+$$-(P_A-P_B)dV_A+\sigma d\alpha_A=0$$
+故
+$$P_A-P_B=\frac{\sigma d\alpha_A}{dV_A}.$$
+由于球体的$\dfrac{d\alpha_A}{dV_A}=\dfrac{2}{R}$，代入后，得
+\begin{equation}
+P_A-P_B=\frac{2\sigma}{R}
+\end{equation}
+当$R\rightarrow\infty$，即曲面变为平面时，式(1.6)即变为式(1.5)。
