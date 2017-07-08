@@ -1,1 +1,24 @@
 ﻿\subsection{传质平衡}
+考虑由$A,B$两相所组成的体系，处在恒温恒压下，达到力学平衡和热平衡（即$T_A=T_B=T,P_A=P_B=P$）。设有$dn_{iB}$摩尔的组分$i$由$B$相进入$A$相内。根据热力学中开启系自由能表达式，整个体系的亥姆霍兹自由能改变量（因$dP=0,dG=DF+PdV=\sum\limits_i{\mu_idn_i}$，故可用$dF=-PdV+\sum\limits_i{\mu_idn_i}$表示）
+\begin{equation}
+dF=dF_A+dF_B=-PdV_A-PdV_B+(\mu_{iB}-\mu_{iA})dn_{iB},
+\end{equation}
+式中利用了$dn_{iA}=-dn_{iB}$，$\mu_{iB}$是第$i$组分在$B$相中的化学势，$\mu_{iA}$是该组分在$A$相中的化学势，而前两项是对体系所做\footnote{原文作“作”。}的功，设为$w$，故有
+\begin{equation}
+dF=w+(\mu_{iB}-\mu_{iA})dn_{iB}.
+\end{equation}
+根据自由能平衡判据，$dF\leq w$，则上式可谢伟
+\begin{equation}
+(\mu_{iB}-\mu_{iA})dn_{iB}\leq 0.
+\end{equation}
+若过程为不可逆时，则取$(\mu_{iB}-\mu_{iA})dn_{iB}<0$，此式说明$(\mu_{iB}-\mu_{iA})$的符号与$dn_{iB}$的符号相反。若$dn_{iB}$为负（即物质由$B$相进入$A$相）时，则有$\mu_{iB}-\mu_{iA}>0,\mu_{iB}>\mu_{iA}$。若过程为可逆时，则有$(\mu_{iB}-\mu_{iA})dn_{iB}=0$，但$dn_{iB}\neq 0$，故有
+\begin{equation}
+\mu_{iB}-\mu_{iA}=0\text{ 或 }\mu_{iB}=\mu_{iA}.
+\end{equation}
+由此得出结论，物质由化学势较高的相进入化学势较低的相。达到平衡时，该物质在两相中的化学势相等。
+
+同样，对其他组分也可得出类似上述的结果，同时也可推广至两个相以上的体系。所以在由若干个相组成的体系中，当该体系达到平衡状态时，则组成体系的每一组份在各个相内的化学势彼此相等， 即
+\begin{equation}
+\mu_{iA}=\mu_{iB}=\mu_{iC}=\cdots=\mu_{iN}
+\end{equation}
+等。因此，在恒温恒压下，当体系达到平衡时，各组分在整个体系各个相之内的化学势必须彼此相等，否则，在各个相之间将存在物质的传递过程，物质将从化学势高的相转移到化学势低的相，直到组分在各相内的化学势相等为止。
