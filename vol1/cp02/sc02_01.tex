@@ -22,3 +22,42 @@ $$\nabla T=\frac{\partial T}{\partial x}i+\frac{\partial T}{\partial y}j+\frac{\
 \rho c_pv\nabla T=K\Delta T.
 \end{equation}
 如果熔体处于静止状态，即$v=0$，那么，式(2.5)就变成上述热传导方程式，即变成式(2.4)。
+
+\paragraph{(2)质量输运}晶体生长的质量输运存有两种截然不同的输运模式，其一为扩散，其二为对流，前者是通过分子运动来实现的，后者是通过溶解于流体中的物质质点，在流体宏观运动过程中被流体带动并一同输运。在实际晶体生长输运过程中，对流与扩散起着同等重要的作用。
+
+在溶液中溶质的浓度随空间位置而变化，每一点都有确定的浓度，而不同点的浓度不完全相同，通常把溶质在溶液中浓度的空间分布称为溶质的浓度场。在浓度场中，将溶质浓度祥等的空间各点联结起来，所得到的空间曲面称为等浓度面。浓度梯度是一种矢量，它沿着等浓度面的法线并指向浓度升高的方向，其大小是沿该方向单位长度浓度的变化。扩散的驱动力来源于溶液浓度梯度。若浓度场记为$(x,y,z)$，则浓度梯度可表示为
+\begin{equation}
+\nabla c_i=\frac{\partial c_i}{\partial x} \bm{i}+ \frac{\partial c_i}{\partial y} \bm{j}+ \frac{\partial c_i}{\partial z} \bm{k}.
+\end{equation}
+溶质扩散起因于浓度梯度。恒稳态下，描述扩散过程的数学基础是Fick的第一、第二扩散定律。当第一扩散定律用于一维扩散时，可用下式表示：
+\begin{equation}
+J_x=-D_{Li}\frac{\partial c_i}{\partial x}
+\end{equation}
+式中的$J_x$为物质体系中第$i$个组分的通量（单位时间内通过单位面积的物质量），又称物质流密度，$D_{Li}$为第$i$个组分在溶液中的扩散系数，$\dfrac{\partial c_i}{\partial x}$为第$i$个组分在$x$方向上的浓度梯度，右面的负号表示溶质扩散沿着溶质浓度降低的方向进行。式$(2.8)$只能适用于恒稳态的扩散，$\dfrac{\partial c_i}{\partial x}$不随试键的变化而变化，但在实际晶体生长过程中，一般不具备恒稳态的条件，而$c_i$与$\dfrac{\partial c_i}{\partial x}$均为距离与时间的函数。在这种情况下，可应利用Fick的第二扩散定律。当第二扩散定律用于一维扩散时，可表示为
+\begin{equation}
+\frac{\partial c_i}{\partial t} = D_{Li}\frac{\partial^2c_i}{\partial x^2}.
+\end{equation}
+当用于三维扩散时，可用下式表示：
+\begin{equation}
+\frac{\partial c_i}{\partial t} = D_{Li}(\frac{\partial^2c_i}{\partial x^2}+\frac{\partial^2c_i}{\partial y^2}+\frac{\partial^2c_i}{\partial z^2}).
+\end{equation}
+
+扩散系数$D_{Li}$一般都作为常数，但严格地来讲，它并不是常熟，而是溶质浓度的函数，而且$D_{Li}$的数值取决于实验条件，在一定的温度下，$D_{Li}$是从一系列溶质浓度中所测量出来的平均值，并称它为积分扩散系数。如果只是从一个溶质浓度中测量出的数值，则称为微分扩散系数。文献中所记载的许多物质的$D_{Li}$值既不是积分扩散系数，也不是微分扩散系数，而是根据$D_{Li}$与溶质浓度无关的假设而计算出来的数值，它是表征气相或溶液输运性质的重要参数，$D_{Li}$的单位为$\mathrm{cm^2/s}$。
+
+关于对流输运的问题，由于生长晶体流体（气\footnote{原文作“汽”。}体、溶液）本身的组成往往是多组元的，因此描述晶体生长的对流输运，应该是混合流体的动力学方程式。为了使问题简化起见，只考虑不可压缩的定常流体，这样，物质的对流扩散方程可表示为
+\begin{equation}
+\frac{\partial c_i}{\partial t}+\bm{v}\nabla c_i=D_{Li}\Delta c_i.
+\end{equation}
+如式$(2.11)$用分量表示，可写成下式：
+\begin{equation}
+\frac{\partial c_i}{\partial t}+v_x\frac{\partial c_i}{\partial x}+v_y\frac{\partial c_i}{\partial y}+v_z\frac{\partial c_i}{\partial z}=D_{Li}(\frac{\partial^2c_i}{\partial x^2}+\frac{\partial^2c_i}{\partial y^2}+\frac{\partial^2c_i}{\partial z^2}).
+\end{equation}
+这里$\bm{v}$为流体的流动速度，一般来说，$\bm{v}$是坐标的函数。
+
+如果溶质浓度$c_i$在流体中的分布，不随时间$t$而改变，即流体处在恒稳态下，这时$\frac{\partial c_i}{\partial t}=0$，那么，式$(2.12)$便变成
+\begin{equation}
+\bm{v}\nabla c_i=D_{Li}\Delta c_i
+\end{equation}
+如果流体处于静止状态，即$\bm{v}=\bm{0}$，因而式$(2.12)$就变成Fick第二扩散定律方程式，即变成式$(2.10)$。
+
+%TODO: (3)动量输运
